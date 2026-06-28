@@ -3,7 +3,6 @@ import User from '@/models/userModel'
 import {NextRequest,NextResponse} from 'next/server'
 import bcryptjs from 'bcryptjs'
 import bcrypt from 'bcryptjs'
-import { log } from 'node:console'
 import {sendEmail} from '@/helpers/mailer'
 connect()
 
