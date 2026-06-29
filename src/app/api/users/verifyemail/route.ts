@@ -1,4 +1,4 @@
-import { connect } from '@/app/dbConfig/dbConfig'
+import { connect } from '@/dbConfig/dbConfig'
 import User from '@/models/userModel'
 import { NextRequest, NextResponse } from 'next/server'
 import bcryptjs from 'bcryptjs'
@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
         const user = await User.findOne({ verifyToken: token, verifyTokenExpiry: { $gt: Date.now() } })
         if (!user) {
             return NextResponse.json(
-                { error: "invalid token detils",{ status: 400 }
+                { error: "invalid token detils"},{ status: 400 }
             )
         }
 

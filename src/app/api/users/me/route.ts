@@ -1,4 +1,4 @@
-import {connect} from '@/app/dbConfig/dbConfig'
+import {connect} from '@/dbConfig/dbConfig'
 import { getDataFromToken } from '@/helpers/getDataFromToken'
 import User from '@/models/userModel'
 

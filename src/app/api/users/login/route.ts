@@ -1,4 +1,4 @@
-import {connect} from '@/app/dbConfig/dbConfig'
+import {connect} from '@/dbConfig/dbConfig'
 import User from '@/models/userModel'
 import bcrypt from 'bcryptjs'
 import bcryptjs from 'bcryptjs'
