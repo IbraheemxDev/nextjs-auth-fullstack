@@ -14,7 +14,7 @@ export async function POST(request:NextRequest){
 
             const user=await User.findOne({email})
 
-            if(!user){
+            if(user){
                 return NextResponse.json({error:"User already registered"},{status:400})
             }
 
